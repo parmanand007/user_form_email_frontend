@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 p,
 div {
   font-family: Lato;
 }
 
 .wrapper {
-  height: 97vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -121,9 +125,12 @@ input.error {
 .fullName {
   width: 100%;
 }
-
+.react-international-phone-input-container .react-international-phone-input {
+  width: 100%;
+}
 .email,
-.phoneNo {
+.phoneNo,
+.phoneNo-input {
   width: 100%;
 }
 
@@ -131,4 +138,52 @@ input.error {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.submit p {
+  /* color: red; */
+  padding-top: 5px;
+  font-size: 12px;
+}
+.home-button {
+  min-width: 0;
+  width: 100px;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  max-width: 800px;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #22223b;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    width: 100vh;
+    height: 100vh;
+  }
+  #customers {
+    overflow-x: scroll;
+    max-width: 700px;
+  }
 }
